@@ -36,10 +36,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 	width: 100%;
 	height: 100vh;
 	background-color: #f6eee9;
-	background-image: url("../img/Layer_1_copy_2.png") ;
+	background-image: url("../img/Banner_Image.png") ;
 	background-repeat:no-repeat; 
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	z-index: 1;
 	overflow: hidden;
 }
@@ -48,11 +48,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 	width: 100vw;
 	height:10vh; 
 	display: flex;
+	justify-content: space-between;
 	background-color: #000000;
 	opacity: 0.76;
 	margin-top: 5vh;
 	position: absolute;
 	z-index: 3;
+	padding: 5px 40px 5px 40px;
 }
 .MenuLogo{
 	width:50vw;
@@ -63,15 +65,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 		display: flex;
 		color: #ffffff;
 		font-family: Lato;
-		font-size: 2vh;
+		font-size: 15px;
 		}
-	.MainThemeLi{
-		margin: 2vw;
-	}
-	.MainThemeLi:hover{
-		border: 10px;
-		border-color: #e9696a;  
-	}
+		.MainThemeNavlink{
+			display: inline-block;
+			margin: 0 auto;
+			margin-top: 20px;
+
+		}
+	
 .MainThemeText {
 	padding-top:12%;
 	padding-left:12%;
@@ -93,27 +95,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 	z-index: 3;
 }
 .MainThemeButtom{
-	width: 11vw;
-	height: 5vh;
+	max-width: 100px;
 	color: #3d3d39;
 	font-family: Lato;
 	font-size: 14px;
 	border: 1px solid #fac81b;
 	margin-top: 5vh;
 	padding: 1vw;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	z-index: 3;
 
 }
-.BackGroundImg{
-	display: none;
-}
+
 @media (max-width: 768px){
 	.MainThemeNav{
 		display: none;
 	}
 	.MainTheme{
-		background-image: none; 
+
 	}
 	.MainThemeText {
 		padding-top:130px;
